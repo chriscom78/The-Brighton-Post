@@ -89,11 +89,19 @@
 
 @media screen and (min-width: 650px) {
 	.snippet {
-		font-size:14px;
+		font-size:16px;
 		min-height:150px;
 		padding:1em;
 }
-li.snippet:nth-child(odd){
+.snippet__thumbnail {
+	display:block;
+	width:30%;
+}
+
+.snippet__text {
+		width:65%;
+}
+	li.snippet:nth-child(odd){
 		background-color:#E8E8E8;
 }
 	li.snippet:nth-child(even){
@@ -126,7 +134,7 @@ li.snippet:nth-child(odd){
   }
   
 	li.snippet:nth-child(odd){
-		font-size:16px;
+		font-size:18px;
 		background-color:#E8E8E8;
 }
 	li.snippet:nth-child(even){

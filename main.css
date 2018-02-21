@@ -326,27 +326,34 @@ main {
   padding: 1em;
 }
 
-.snippet {
-  clear: both;
-  margin: 24px 0;
-  
+.snippet__thumbnail > img {
+  width: 100%;
 }
 
-.snippet__thumbnail {
-  width: 28%;
-  height:auto;
-  float: left;
-  margin-right: 1em;
+.snippet {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .snippet__title {
-  font-weight: 500;
+  order: 0;
+  width: 100%;
+  margin: 0 0 0.5em;
+  padding-top:1em;
 }
 
-.snippet__title a {
-  text-decoration: none;
-  color: #666;
-  padding: 1.5em inherit;
+.snippet__thumbnail {
+  order: 1;
+  width: 30%;
+  display: none;
+}
+
+.snippet__text {
+  order: 2;
+  width: 100%;
+  padding: 0 0 0 1em;
+  text-overflow: ellipsis;
+  font-size:14px;
 }
 
 .snippet__title a:hover,
